@@ -1,0 +1,48 @@
+.hero{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+       
+    .hero_title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 40%;
+        h1{
+            font-size: 10vw;
+            line-height: 60%;
+            text-align: center;
+        }
+    }
+
+    .hero_image{
+        height: 25vw;
+        width: 25vw;
+        
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .hero{
+        .hero_title{
+            width: 100%;
+            h1{
+                font-size: 60px;
+            }
+        }
+       .hero_image{
+        height: 200px;
+        width: 200px;
+       }
+    }
+}
