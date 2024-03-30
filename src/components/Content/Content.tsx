@@ -1,26 +1,22 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLayoutEffect } from 'react'
-import SplitType from 'split-type'
 import './Content.scss'
 
 export default function Content(){
 
     useLayoutEffect(()=>{
         gsap.registerPlugin(ScrollTrigger);
-          // eslint-disable-next-line @typescript-eslint/no-unused-vars
-         const contentTitle = new SplitType('.content_title');
-         const charContentTitle = document.querySelectorAll('.content_title .char');
 
-        gsap.from(charContentTitle,{
+        gsap.from('.content_title',{
             opacity:0,
-            stagger:0.1,
-            x:30,
+            y:100,
             scrollTrigger:{
                 trigger:'.content',
                 start:"top center",
                 end:"center center",
                 scrub:true,
+                markers:true
             }
         })
 
@@ -36,7 +32,7 @@ export default function Content(){
 
 
         return ()=>{
-            gsap.killTweensOf(charContentTitle);
+            gsap.killTweensOf('.content_title');
         }
     },[])
 
