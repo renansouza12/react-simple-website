@@ -16,7 +16,6 @@ export default function Content(){
                 start:"top center",
                 end:"center center",
                 scrub:true,
-                markers:true
             }
         })
 
