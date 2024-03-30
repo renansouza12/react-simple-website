@@ -1,0 +1,38 @@
+footer{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--White);
+    position: relative;
+    span{
+        color: var(--Red);
+        font-size: 6vw;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 300%;
+            background-color: var(--Red);
+            bottom: 0%;
+            left: 0%;
+        }
+    }
+
+    h2{
+        font-size: 6vw;
+        color: var(--text-color);
+        font-weight: 100;
+    }
+
+    p{
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        color: var(--White);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
