@@ -21,14 +21,8 @@
     .hero_image{
         height: 25vw;
         width: 25vw;
-        
-
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }
+        background: url('https://i.pinimg.com/564x/7f/a7/af/7fa7affd970d5a58cd7ea992d24211b5.jpg') center/cover;
+        border-radius: 50%;
     }
 }
 
