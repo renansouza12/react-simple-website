@@ -6,7 +6,7 @@ import './Hero.scss'
 
 export default function Hero(){
     useLayoutEffect(()=>{
-
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const heroTitle = new SplitType('.hero_title_txt');
         const charHeroTitle = document.querySelectorAll('.hero_title_txt .char');
 
@@ -16,6 +16,10 @@ export default function Hero(){
             opacity:0
         })
 
+        
+        return ()=>{
+            gsap.killTweensOf(charHeroTitle);
+        }
     },[])
 
     return(

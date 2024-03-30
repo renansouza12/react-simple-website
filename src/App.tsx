@@ -1,3 +1,4 @@
+import Content from './components/Content/Content'
 import Hero from './components/Hero/Hero'
 import Introduction from './components/Introduction/Introduction'
 import Header from './components/header/Header'
@@ -9,6 +10,7 @@ export default function App() {
       <Header/>
       <Hero/>
       <Introduction/>
+      <Content/>
     </div>
   )
 }

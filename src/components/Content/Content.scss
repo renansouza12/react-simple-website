@@ -1,0 +1,48 @@
+.content{
+    height: 100%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 7vw;
+        color: var(--Red);
+    }
+    h2{
+        position: absolute;
+        color: var(--text-color);
+        top:10%;
+        left: 10%;
+        text-transform: uppercase;
+        width: 30%;
+        &:nth-child(1){
+            top:80%;
+            left: 60%;
+            text-align: end;
+        }
+    }
+    .content_image{
+        margin: 3rem 0;
+        height: 130vh;
+        width: 60vw;
+        background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/86d3af183139515.653a2cf3c587f.jpg') center/cover;
+    }
+}
+
+@media (max-width:425px) {
+        .content{
+            h1{
+                font-size: 40px;
+                font-weight: bold;
+            }
+            h2{
+                font-size: 15px;
+            }
+            .content_image{
+                width: 90vw;
+            }
+        }
+}
